@@ -1,5 +1,3 @@
-'use client';
-
 import { Provider } from 'react-redux';
 import { store } from '../store/store';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
@@ -25,6 +23,11 @@ const darkTheme = createTheme({
   },
 });
 
+export const metadata = {
+  title: 'Web3 Platform - Your Gateway to Crypto',
+  description: 'Web3 platform for crypto enthusiasts',
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -32,10 +35,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <title>Web3 Platform - Your Gateway to Crypto</title>
-        <meta name="description" content="Web3 platform for crypto enthusiasts" />
-      </head>
       <body>
         <Provider store={store}>
           <ThemeProvider theme={darkTheme}>
