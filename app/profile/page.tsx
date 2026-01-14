@@ -14,7 +14,6 @@ import {
   Typography,
   Button,
   Avatar,
-  Grid,
   Paper,
   Divider,
 } from '@mui/material';
@@ -87,51 +86,48 @@ export default function ProfilePage() {
 
           <Divider sx={{ my: 3, borderColor: '#73FDAA33' }} />
 
-          <Grid container spacing={3}>
-            <Grid xs={12}>
-              <Paper
-                sx={{
-                  p: 3,
-                  background: '#1a1a1a',
-                  border: '1px solid #73FDAA33',
-                }}
-              >
-                <Box display="flex" alignItems="center" mb={2}>
-                  <EmailIcon sx={{ color: '#73FDAA', mr: 2 }} />
-                  <div>
-                    <Typography variant="caption" color="textSecondary">
-                      Email Address
-                    </Typography>
-                    <Typography variant="body1" sx={{ color: '#fff' }}>
-                      {user.email}
-                    </Typography>
-                  </div>
-                </Box>
-              </Paper>
-            </Grid>
+          <Box sx={{ mb: 3 }}>
+            <Paper
+              sx={{
+                p: 3,
+                background: '#1a1a1a',
+                border: '1px solid #73FDAA33',
+                mb: 2,
+              }}
+            >
+              <Box display="flex" alignItems="center">
+                <EmailIcon sx={{ color: '#73FDAA', mr: 2 }} />
+                <div>
+                  <Typography variant="caption" color="textSecondary">
+                    Email Address
+                  </Typography>
+                  <Typography variant="body1" sx={{ color: '#fff' }}>
+                    {user.email}
+                  </Typography>
+                </div>
+              </Box>
+            </Paper>
 
-            <Grid xs={12}>
-              <Paper
-                sx={{
-                  p: 3,
-                  background: '#1a1a1a',
-                  border: '1px solid #73FDAA33',
-                }}
-              >
-                <Box display="flex" alignItems="center" mb={2}>
-                  <PersonIcon sx={{ color: '#73FDAA', mr: 2 }} />
-                  <div>
-                    <Typography variant="caption" color="textSecondary">
-                      User ID
-                    </Typography>
-                    <Typography variant="body1" sx={{ color: '#fff' }}>
-                      {user.id}
-                    </Typography>
-                  </div>
-                </Box>
-              </Paper>
-            </Grid>
-          </Grid>
+            <Paper
+              sx={{
+                p: 3,
+                background: '#1a1a1a',
+                border: '1px solid #73FDAA33',
+              }}
+            >
+              <Box display="flex" alignItems="center">
+                <PersonIcon sx={{ color: '#73FDAA', mr: 2 }} />
+                <div>
+                  <Typography variant="caption" color="textSecondary">
+                    User ID
+                  </Typography>
+                  <Typography variant="body1" sx={{ color: '#fff' }}>
+                    {user.id}
+                  </Typography>
+                </div>
+              </Box>
+            </Paper>
+          </Box>
 
           <Box mt={4}>
             <Button
