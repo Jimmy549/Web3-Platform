@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { useSubscribeNewsletterMutation } from '../store/services/newsletter';
+import { useSubscribeNewsletterMutation } from '@/store/services/newsletter';
 import { Snackbar, Alert, CircularProgress } from '@mui/material';
 
 export default function NewsLetter() {

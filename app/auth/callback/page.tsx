@@ -3,8 +3,8 @@
 import { useEffect, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useDispatch } from 'react-redux';
-import { setCredentials } from '../../../store/slices/authSlice';
-import { useGetProfileQuery } from '../../../store/services/auth';
+import { setCredentials } from '@/store/slices/authSlice';
+import { useGetProfileQuery } from '@/store/services/auth';
 import { CircularProgress, Container, Typography, Box } from '@mui/material';
 
 function AuthCallbackContent() {

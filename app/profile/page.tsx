@@ -3,9 +3,9 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useSelector, useDispatch } from 'react-redux';
-import { RootState } from '../../store/store';
-import { logout as logoutAction } from '../../store/slices/authSlice';
-import { useLogoutMutation } from '../../store/services/auth';
+import { RootState } from '@/store/store';
+import { logout as logoutAction } from '@/store/slices/authSlice';
+import { useLogoutMutation } from '@/store/services/auth';
 import {
   Container,
   Box,
