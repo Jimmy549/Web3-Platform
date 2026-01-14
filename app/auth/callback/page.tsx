@@ -11,7 +11,7 @@ function AuthCallbackContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const dispatch = useDispatch();
-  const token = searchParams.get('token');
+  const token = searchParams?.get('token');
 
   // Store token first
   useEffect(() => {
