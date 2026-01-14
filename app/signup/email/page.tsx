@@ -79,7 +79,7 @@ export default function SignupEmailPage() {
             <form onSubmit={handleEmailSignup}>
               <TextField fullWidth label="Full Name" value={name} onChange={(e) => setName(e.target.value)} sx={{ mb: 2 }} InputProps={{ style: { color: '#fff' } }} InputLabelProps={{ style: { color: '#73FDAA' } }} />
               <TextField fullWidth label="Email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} sx={{ mb: 2 }} InputProps={{ style: { color: '#fff' } }} InputLabelProps={{ style: { color: '#73FDAA' } }} />
-              <TextField fullWidth label="Password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} sx={{ mb: 3 }} InputProps={{ style: { color: '#fff' }, autoComplete: 'current-password' }} InputLabelProps={{ style: { color: '#73FDAA' } }} />
+              <TextField fullWidth label="Password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} sx={{ mb: 3 }} InputProps={{ style: { color: '#fff' }, autoComplete: 'new-password' }} InputLabelProps={{ style: { color: '#73FDAA' } }} />
               <Button fullWidth type="submit" variant="contained" size="large" startIcon={isLoading ? <CircularProgress size={20} /> : <PersonAddIcon />} disabled={isLoading} sx={{ background: 'linear-gradient(135deg, #73FDAA 0%, #22c55e 100%)', color: '#000', py: 1.5, fontWeight: 'bold', fontSize: '1.1rem', '&:hover': { background: 'linear-gradient(135deg, #22c55e 0%, #73FDAA 100%)' }, '&:disabled': { background: '#666', color: '#999' } }}>
                 {isLoading ? 'Creating...' : 'Create Account'}
               </Button>
