@@ -112,7 +112,7 @@ export default function Footer() {
         </div>
         <div>
           <div className="flex justify-center md:justify-end py-10 ">
-            <span>©2021 All rights reserved</span>
+            <span>©2026 All rights reserved</span>
           </div>
         </div>
       </div>
